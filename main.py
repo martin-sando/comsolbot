@@ -7,15 +7,15 @@ from pathlib import WindowsPath
 import jpype
 import time
 
-bot = telebot.TeleBot('1749257749:AAHdbSkIsOclIJmvE1CSQP9x0SA5U7Fi0PA')
-mph.discovery.search_Windows = lambda: [{'name': '5.5',
+bot = telebot.TeleBot('1749257***SENSORED***A5U7Fi0PA') #вставить сюда токен, полученный через @botfather
+mph.discovery.search_Windows = lambda: [{'name': '5.5', #здесь и ниже: указать данные установленной версии Comsol
                                          'major': 5,
                                          'minor': 5,
                                          'patch': 0,
                                          'build': 359,
-                                         'root': WindowsPath('C:/Program Files/COMSOL/COMSOL55/Multiphysics'),
-                                         'jvm': WindowsPath('C:/Program Files/COMSOL/COMSOL55/Multiphysics/java/win64/jre/bin/server/jvm.dll'),
-                                         'server': [WindowsPath('C:/Program Files/COMSOL/COMSOL55/Multiphysics/bin/win64/comsol'),
+                                         'root': WindowsPath('C:/Program Files/COMSOL/COMSOL55/Multiphysics'), #указать путь к главной папке "Multiphysics"
+                                         'jvm': WindowsPath('C:/Program Files/COMSOL/COMSOL55/Multiphysics/java/win64/jre/bin/server/jvm.dll'), #указать путь к файлу jvm.dll
+                                         'server': [WindowsPath('C:/Program Files/COMSOL/COMSOL55/Multiphysics/bin/win64/comsol'), #указать путь к файлу запуска Comsol
                                                     'mphserver']}]
 client = mph.start()
 print('Started')
